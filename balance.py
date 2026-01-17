@@ -1,6 +1,9 @@
+import sys
 
-deposit=float(input("Deposit"))
-balance=float(input("Balance"))
-withdrawal=float(input("withdraw"))
-balance=balance+deposit-withdrawal
-print("final balance=",balance)
+deposit = float(sys.argv[1])
+withdraw = float(sys.argv[2])
+balance = float(sys.argv[3])
+
+print("Deposit:", deposit)
+print("Withdraw:", withdraw)
+print("Balance:", balance)
